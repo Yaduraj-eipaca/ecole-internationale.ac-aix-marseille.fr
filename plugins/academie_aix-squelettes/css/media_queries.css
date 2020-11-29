@@ -1,0 +1,466 @@
+/*
+---------------------------------------------------
+Plugin "Gestion du squelette
+académique" pour Spip 3.0
+---------------------------------------------------
+(c) 2014
+Les services en ligne du pôle numérique
+DATSI / DAN - Rectorat d'Aix-Marseille
+---------------------------------------------------
+Elements CSS des "Media queries" 
+pour tablettes et smartphones
+---------------------------------------------------
+*/
+
+/* ----------------------
+Points d'entrée :
+- 320px = petit smartphone portrait
+- 480px = petit smartphone paysage / grand smartphone portrait
+- 640px = grand smartphone paysage / petite tablette portrait
+- 800px = petite tablette paysage / grande tablette portrait
+- 1024px = grande tablette paysage / ecrans standard
+----------------------- */
+
+@CHARSET "UTF-8";
+
+/* Grandes tablettes en mode portrait ----------- */
+@media only screen
+and (max-width : 1024px) {
+
+	#bloc_page {
+		width: 100%;
+		box-shadow: initial;
+	}
+	#banniere {
+		margin: 0 auto 5px;
+		width: 100%;
+		background-position: -1px 0;
+		border-width: 0 0 1px;
+		height: 75px;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		-o-border-radius: 0;
+		border-radius: 0;
+		padding-bottom: 0;
+	}
+	#banniere #infos_site,
+	#banniere #accueil a {
+		width: 65%;
+		height: 75px;
+	}
+
+	.officielv2 #banniere {
+		margin: 0 auto;
+		background-position: -20px 50%;
+		height: 90px;
+	}
+	.officielv2 #banniere a {
+		height: 90px;
+		margin-left: -10px;
+	}
+	.officielv2 #banniere #infos_site,
+	.officielv2 #banniere #accueil a {
+		width: 50%;
+		height: 90px;
+	}
+	
+	.officielv2 #banniere #infos_site {
+		left: 245px;
+	}
+	#fil_d_ariane {
+		padding: 5px 0;
+	}
+	.contenu_principal {
+		width: auto;
+		padding: 2px 5px 0;
+	}
+	
+	#colonne_centrale img {
+		max-width: 100%;
+	}
+	
+	#bloc_colonne_gauche {
+		width: 19%;
+		margin: 0 1% 0 0;
+	}	
+	#bloc_colonne_centrale.mode_1_col {
+		width: 100%;
+	}	
+	#bloc_colonne_centrale.mode_2_col {
+		width: 80%;
+	}
+	#bloc_colonne_centrale.mode_3_col {
+		width: 60%;
+	}
+	#bloc_colonne_droite {
+		width: 19%;
+		margin: 0 0 0 1%;
+	}
+	.officielv2 .contenu_principal {
+		padding: 10px;
+	}
+	.officielv2 .contenu_interieur {
+		margin: 0 0 10px ;
+	}
+	
+	#colonne_centrale .contenu_interieur {
+		padding: 0 5px;
+	}
+	.officielv2 #colonne_centrale .contenu_interieur {
+		padding: 10px 10px 0;
+	}
+	#colonne_centrale .fond_diapo .titre_diapo {
+		margin: 5px 0 0;
+	}
+	.officielv2 #colonne_centrale .fond_diapo .titre_diapo {
+		margin: 0 -10px;
+	}
+	.officielv2 #colonne_centrale .actualite_entete {
+		margin: 10px 0 0;
+	}
+	.officielv2 div.flexslider {
+		margin: -10px 0 30px;
+	}
+}
+
+/* Petites tablettes en mode portrait ----------- */
+@media only screen
+and (max-width : 800px) {
+
+	#menu_horizontal {
+		display: none;
+	}
+	#menu_rubriques_horizontal {
+		display: none;
+	}
+	#menu_rubriques_vertical {
+		display: none;
+	}
+	#bloc_colonne_gauche {
+		display: none;
+	}	
+	#logout {
+		display: none;
+	}
+	
+	#bloc_colonne_centrale.mode_2_col {
+		width: 100%;
+	}
+	#bloc_colonne_centrale.mode_3_col {
+		width: 76%;
+	}
+	#bloc_colonne_droite {
+		width: 23%;
+	}
+	#en_tete_formulaire_recherche {
+		display:none;
+	}
+	.officielv2 #colonne_droite .bloc_a_lire {
+		display: block;
+	}
+	#smart_menu .menu_rubriques {
+		display: block;
+	}
+	#smart_menu {
+		display: block;
+	}
+	#smart_bouton {
+		display: block;
+	}
+	
+	#colonne_centrale .bloc_fenetre {
+		margin: 0
+	}
+
+	#calendrier_acad .bloc_evenement {
+		width: 33.3%;
+	}
+	#calendrier_acad .bloc_evenement:nth-of-type(3n+1) .evenement {
+		margin: 0 2px 4px 0;
+	}
+	#calendrier_acad .bloc_evenement:nth-of-type(3n+3) .evenement {
+		margin: 0 0 4px 2px;
+	}
+	#pied_de_page {
+		font-size: .9em;
+	}
+}
+
+/* Smartphones en mode paysage ----------- */
+@media only screen
+and (max-width : 640px) {
+
+	.arrondis {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		-o-border-radius: 0;
+		border-radius: 0;
+	}
+	.bordures {
+		border : 0;
+	}
+	#banniere {
+		background-position: -65px -5px;
+		margin-bottom: 0;
+		height: 70px;
+	}
+	#banniere a {
+		height: 70px;
+	}
+	#liens_institutionnels a {
+		margin-left: -65px;
+	}
+	#banniere #infos_site {
+		width: 50%;
+		margin-left: -50px;
+		height: 70px;
+		top:0;
+	}
+	#banniere #accueil a {
+		width: 70%;
+		margin-left: -60px;
+		height: 70px;
+	}
+	.officielv2 #banniere {
+		background-position: -90px 50%;
+		height: 85px;
+		border-bottom: solid 1px #D0D0D0;
+	}
+	.officielv2 #banniere a {
+		margin-left: -85px;
+		height: 85px;
+	}
+	.officielv2 #banniere #infos_site {
+		width: 60%;
+		margin-left: -60px;
+		margin-top: -35px;
+		height: 75px;
+		top: 50%;
+	}
+
+	.officielv2 #banniere #accueil a {
+		margin-left: -85px;
+		width: 60%;
+		height: 85px;
+	}
+	#banniere #nom_site {
+		font-size: 1em;
+	}
+	#banniere #type_site,
+	#banniere #lieu_site {
+		font-size: .em;
+		letter-spacing: 1px;
+	}
+	.officielv2 .contenu_principal,
+	.contenu_principal {
+		padding: 0 ;
+	}
+	#bloc_colonne_centrale {
+		margin: auto;
+		float: none;
+	}
+	#bloc_colonne_centrale.mode_3_col,
+	.officielv2 #bloc_colonne_centrale.mode_3_col {
+		width: 100%;
+	}
+	#colonne_centrale {
+		border:0;
+	}
+	#colonne_centrale .contenu_interieur {
+		border:0;
+	}
+	#colonne_centrale .bloc_fenetre {
+		border-style: solid;
+		border-width: 1px 0;
+	}
+	#colonne_centrale #acadaix_fenetre {
+		height:480px;
+	}
+
+	#colonne_centrale .fond_diapo .texte_diapo {
+		font-size: .9em;
+	}
+	#colonne_centrale .fond_diapo .img_diapo {
+		padding: 10px 0 0;
+	}
+	
+	#colonne_centrale .spip_documents {
+		font-size: .9em;
+		font-weight: normal;
+	}
+	#colonne_centrale .spip_doc_titre {
+		width: auto !important;
+	}
+	#colonne_centrale #agenda_acad,
+	#colonne_centrale #calendrier_acad {
+		margin: 0;
+	}
+	#bloc_colonne_droite,
+	.officielv2 #bloc_colonne_droite {
+		float: none;
+		width: 100%;
+		margin:0;
+	}
+	#colonne_droite {
+		margin: 0;
+		border-bottom: solid 1px #000;
+	}
+	#colonne_droite .contenu_interieur {
+		float: left;
+		width: 50%;
+		margin: 0;
+		border:0;
+		padding:0
+	}
+	#colonne_droite .contenu_interieur .bloc_colonne {
+		margin: 0 5px 5px;
+	}
+	.officielv2 #colonne_droite {
+		border: 0;
+		padding: 0;
+		background: #fff;
+		margin: 0 0 2px;
+	}
+	.officielv2 #colonne_centrale .actualite_entete {
+		margin: 0;
+	}
+	
+	.officielv2 #colonne_centrale .contenu_interieur,
+	.officielv2 #colonne_droite .contenu_interieur {
+		margin: 0 0 2px;
+	}
+	.officielv2 #colonne_droite .contenu_interieur .bloc_colonne {
+		margin: 10px 5px 5px;
+	}
+	#colonne_droite h2,
+	#colonne_droite .article_colonne,
+	#colonne_droite .breve_colonne {
+		margin: 0 4px 7px;
+	}
+	#colonne_droite .article_colonne .article_date,
+	#colonne_droite .breve_colonne .breve_date {
+		display: none;
+	}
+	.colonne_laterale #calendar {
+		display: none;
+	}
+
+	#page_rubrique .content {
+		border-width: 0 0 1px;
+		border-style: solid;
+	}
+	.wrapper,
+	.aside {
+		width: 100% !important;
+	}
+}
+/*  Smartphones en mode portrait ----------- */
+@media only screen
+and (max-width : 480px) {
+
+	#banniere {
+		background-position: -220px 0;
+	}
+	#banniere #infos_site,
+	#banniere #accueil a {
+		width: 95% !important;
+	}
+	#liens_institutionnels {
+		display: none;
+	}
+	#banniere #infos_site ,
+	#banniere #accueil a {
+		margin-left: 0 !important;
+		left: 10px !important;
+	}
+	.officielv2 #banniere {
+		background-position: -260px -20px;
+		height: 80px;
+	}
+	.contenu_interieur {
+		margin: 0;
+		padding: 5px 0;
+	}
+	h1, .h1 {
+		font-size: 2em;
+		margin: .2em 0 .5em;
+	}
+	h2, .h2 {
+		font-size: 1.8em;
+		margin: .2em 0 .5em;
+	}
+	h3, .h3 {
+		font-size: 1.6em;
+		margin: .2em 0 .5em;
+	}
+	h4, .h4 {
+		font-size: 1.5em;
+		margin-bottom: 0.4em;
+	}
+	p, .p {
+		font-size: 1em;
+		line-height: 1.1;
+	}
+	th, td, caption {
+		padding: 0.5em;
+	}
+	#colonne_centrale .info-publi {
+		font-size: .9em;
+	}
+	#colonne_centrale .cartouche .spip_logos {
+		margin: -25px 0 5px;
+		width: 60px;
+		padding: 0 0 0 5px;
+	}
+	#colonne_centrale .fond_diapo .titre_diapo {
+		font-size: 1.7em;
+		padding: 5px;
+		line-height: 1.2;
+	}
+	#colonne_centrale .fond_diapo .texte_diapo {
+		padding: 2px 5px 0;
+		line-height: 11px;
+	}
+	#colonne_centrale .spip_documents {
+		font-size: .85em;
+	}
+	#agenda_acad .fc-day-header {
+		width: 14% !important;
+	}
+
+	#calendrier_acad .bloc_evenement {
+		width: 50%;
+	}
+	#calendrier_acad .bloc_evenement:nth-of-type(odd) .evenement {
+		margin: 0 2px 4px 0;
+	}
+	#calendrier_acad .bloc_evenement:nth-of-type(even) .evenement {
+		margin: 0 0 4px 2px;
+	}
+	
+	.evenement_info dt {
+		width: 25%;
+	}
+	.evenement_info dd {
+		margin-left: 25%;
+	}
+	.texte p {
+		font-size: 1em;
+	}
+	#colonne_droite h2,
+	#colonne_droite .article_colonne,
+	#colonne_droite .breve_colonne {
+		margin: 3px 2px 7px;
+	}
+	
+	div.flexslider .slides {
+	  padding: 0;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1025px) {
+	/* Voir les CSS standard */
+
+}

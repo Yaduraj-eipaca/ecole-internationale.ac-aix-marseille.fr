@@ -1,0 +1,276 @@
+/*
+---------------------------------------------------
+Plugin "Gestion du squelette
+académique" pour Spip 3.0
+---------------------------------------------------
+(c) 2014
+Les services en ligne du pôle numérique
+DATSI / DAN - Rectorat d'Aix-Marseille
+---------------------------------------------------
+Elements CSS pour la Colonne centrale
+---------------------------------------------------
+*/
+
+@CHARSET "UTF-8";
+
+
+/* --------------------------------------
+ Fil d'Ariane
+--------------------------------------- */
+#fil_d_ariane {
+	margin: 0 0 10px;
+	padding : 0 0 5px;
+	border-style: solid;
+	border-bottom-width: 1px;
+}
+#fil_d_ariane a,
+#fil_d_ariane span {
+	padding: 0 5px 0 15px;
+	background-position: 0 1px;
+	background-repeat: no-repeat;
+}
+#fil_d_ariane *:last-child {
+	font-weight: bold;
+}
+/* --------------------------------------
+Articles et Rubriques
+--------------------------------------- */
+
+.contenu_interieur {
+	margin: 0 10px;
+	padding: 10px 0 0;
+}
+#colonne_centrale .cartouche .spip_logos {
+	float: right;
+	margin: -30px 0 10px;
+	padding: 0 0 0 10px;
+	background: #fff;
+}
+#colonne_centrale .info-publi {
+	margin: -10px auto 15px;
+}
+
+#colonne_centrale .content {
+	min-height: inherit;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.content .menu li {
+	margin-bottom: 5px;
+	clear : left;
+}
+#page_article .content {
+	border-width: 0 0 1px;
+	border-style: solid;
+}
+.wrapper {
+	overflow: visible;
+	width: auto;
+}
+.aside {
+	margin-bottom: 5px !important;
+	position: relative;
+}
+#page_article .wrapper {
+	float : none;
+	width: 100%
+}
+#page_article .aside {
+	float : none;
+	width: 100%
+}
+#page_article .aside .menu {
+	float : left;
+	width: 50%
+}
+.aside .menu ul {
+	margin: 5px 0 0;
+}
+.aside .menu li {
+	line-height: 12px;
+	list-style: disc;
+	margin: 0 0 4px 15px;
+}
+.aside .menu li li {
+	list-style: square;
+}
+.aside .menu li li li {
+	list-style: circle;
+}
+
+.aside .menu_rubriques .cadenas {
+	width: 9px;
+}
+#page_article  #formulaire_recherche,
+#page_rubrique  #formulaire_recherche {
+	position: inherit;
+	top: 0;
+	right: 0;
+	margin: 0 0 10px;
+}
+#page_article  #formulaire_recherche {
+	text-align: right;
+	margin: 10px 0;
+}
+
+/* enluminures typographiques */
+.texteencadre-spip {
+	border-color: #cacaca;
+	padding: 1em;
+	border-width: 1px;
+}
+.caractencadre-spip {
+	background-color: transparent;
+}
+
+/* SpiPDF */
+.spipdf {
+	display:block;
+	width: 30px;
+	height: 30px;
+}
+
+
+/* Spoiler */
+spoiler, .spoiler {
+	padding: 5px;
+	display: block;
+	background: #f1f1f1;
+}
+.afficher_spoiler {
+	cursor: pointer;
+	font-style: italic;
+	color: #AAA;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding: 0 0 0 14px;
+	margin: 0 0 3px;
+	height: 12px;
+	font-size: 1em;
+}
+.afficher_spoiler.off {
+	background-position: 0 -12px;
+}
+/* Videos */
+.mejs-video {
+	margin: 0 auto 10px ;
+	max-width: 100%;
+}
+
+/* --------------------------------------
+Erreur 404
+--------------------------------------- */
+#page_404 #colonne_centrale ul {
+	margin-bottom: 10px;
+}
+#page_404 #colonne_centrale li {
+	margin-left: 15px;
+	list-style: square;
+}
+#erreur_formulaire_recherche {
+	width: 260px;
+	margin: 20px auto 40px;
+}
+#erreur_formulaire_recherche input[type=text],
+#erreur_formulaire_recherche input[type=submit] {
+	display: inline;
+}
+
+/* Auteur */
+.saisie_texte_message_auteur label {
+	vertical-align: top;
+}
+
+/* --------------------------------------
+Agenda, calendrier et évenements
+--------------------------------------- */
+#page_agenda #colonne_centrale {
+	background: #FFF;
+}
+
+#colonne_centrale #agenda_acad a {
+	padding: 2px 4px;
+}
+#colonne_centrale #agenda_acad a:hover {
+	color:#CFCFCF;
+}
+
+#calendrier_acad .bloc_evenement {
+	float: left;
+	width: 25%;
+}
+#calendrier_acad .evenement {
+	padding: 5px;
+	border: solid 1px #ccc;
+	margin: 0 2px 4px;
+	height: 105px;
+	position: relative;
+	font-size: .9em;
+	overflow: hidden;
+}
+#calendrier_acad .bloc_evenement:nth-of-type(4n+1) .evenement {
+	margin: 0 2px 4px 0;
+}
+#calendrier_acad .bloc_evenement:nth-of-type(4n+4) .evenement {
+	margin: 0 0 4px 2px;
+}
+
+#calendrier_acad .ev_cal {
+	width: 25px;
+	text-align: center;
+	padding: 5px;
+	float: right;
+	margin: -5px -5px 0 0;
+}
+#calendrier_acad .ev_jour {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+#calendrier_acad .ev_mois {
+	text-transform: uppercase;
+	font-size: 1em;
+}
+#calendrier_acad .ev_titre {
+	font-size: .9em;
+	font-weight: bold;
+	margin: 0 35px 0 0;
+}
+#calendrier_acad .ev_lieu_date {
+	font-style: italic;
+	margin: 5px 35px 0 0;
+}
+#calendrier_acad .ev_description {
+	border-top: solid 1px #CCC;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+.evenement_info dt {
+	float: left;
+	width: 20%;
+	margin-bottom: 5px;
+}
+.evenement_info dd {
+	margin-left: 20%;
+	margin-bottom: 5px;
+}
+
+/* Mode fenetre (iframe) */
+#colonne_centrale .bloc_fenetre {
+	margin: 9px 9px 7px;
+	border-width: 0;
+}
+#colonne_centrale #acadaix_fenetre {
+	width: 100%;
+	height:680px;
+}
+
+/* Notes de bas de page */
+.notes {
+	border-top: solid 1px #ccc;
+	padding: 5px 0;
+	clear: both;
+}
+.notes p {
+	font-size: 1em;
+}

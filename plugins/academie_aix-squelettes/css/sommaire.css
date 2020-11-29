@@ -1,0 +1,79 @@
+/*
+---------------------------------------------------
+Plugin "Gestion du squelette
+académique" pour Spip 3.0
+---------------------------------------------------
+(c) 2014
+Les services en ligne du pôle numérique
+DATSI / DAN - Rectorat d'Aix-Marseille
+---------------------------------------------------
+Elements CSS pour la page Sommaire
+---------------------------------------------------
+*/
+
+@CHARSET "UTF-8";
+
+
+/* Diaporama d'articles (slideshow) */
+
+div.flexslider {
+	margin: 0 0 30px;
+	padding: 0;
+	border:0;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	box-shadow:initial;
+	
+}
+div.flexslider .slides img {
+	height: auto;
+}
+div.flexslider img.puce {
+	width: auto;
+	display: inline;
+}
+div.flexslider .flex-control-nav {
+	bottom: -20px;
+}
+div.flexslider .slides {
+	padding: 0;
+}
+div.flexslider .fond_diapo {
+	position: relative;
+}
+#colonne_centrale .fond_diapo .texte_diapo,
+#colonne_centrale .fond_diapo .titre_diapo {
+	margin: 0;
+	padding: 5px 10px;
+}
+
+#colonne_centrale .fond_diapo .titre_diapo,
+#colonne_centrale .fond_diapo a {
+	color: #000;
+}
+#colonne_centrale .fond_diapo .texte_diapo {
+	bottom:0;
+	padding-bottom: 0;
+}
+
+
+/* Actualités */
+#colonne_centrale .actualite_entete {
+	font-style: italic;
+	margin: 5px 0 0;
+	padding: 3px 10px 1px;
+	color: #fff;
+}
+#colonne_centrale .actualite_article {
+	border-width: 1px 0 0;
+	border-style: solid;
+	padding: 2px 0;
+}
+
+#bloc_actualites .actualite_titre {
+	margin: 5px 0;
+}
+#bloc_actualites .date {
+	margin: -6px 0 5px;
+}

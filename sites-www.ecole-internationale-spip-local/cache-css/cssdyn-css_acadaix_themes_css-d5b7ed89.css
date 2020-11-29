@@ -1,0 +1,191 @@
+/* #PRODUIRE{fond=css/acadaix_themes.css}
+   md5:2e3656f4e961c525eace903506f35efe */
+
+
+/*
+---------------------------------------------------
+Plugin "Gestion du squelette
+académique" pour Spip 3.0
+---------------------------------------------------
+(c) 2015
+Les services en ligne du pôle numérique
+DSI / DANE - Rectorat d'Aix-Marseille
+---------------------------------------------------
+Thème académique : "EpleV2/aigue-marine-03"
+---------------------------------------------------
+*/
+
+/* --------------- Commun --------------- */
+#smart_bouton {
+	background: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/smart_bouton.png") 0 0;
+}
+
+#fil_d_ariane a,
+#fil_d_ariane span,
+#colonne_centrale .afficher_spoiler {
+	background-image: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/fleche_droite.png");
+}
+.lien_titre {
+	background-image: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/fleche_gauche.png");
+}	
+#smart_contenu .accueil_rubriques a {
+	background: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/aca_home.svg") 5px -3px no-repeat;
+}
+#smart_recherche .lien_titre {
+	background-image: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/recherche.png");
+}
+
+.recent:after{
+	content: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/nouveaute.png")
+}
+
+/* Back to TOP */
+.backtotopinstance{
+	background-image: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/back_to_top.png")
+}
+/* SpiPDF */
+.spipdf {
+	background-image: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/pdf.svg")
+}
+
+
+
+
+
+ 
+
+/* --------------- Thèmes couleur --------------- */
+
+
+/* Commun */
+#menu_horizontal li {
+	background: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/menuliens.png") left 0px;
+}
+
+#menu_horizontal li:hover  {
+	background: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/menuliens.png") left -20px;
+}
+/*
+#colonne_centrale {
+	background-image: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/logo_education.png");
+}
+*/
+#colonne_centrale .fond_diapo .texte_diapo,
+#colonne_centrale .fond_diapo .titre_diapo {
+	background: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/fond_opacite50_blanc.png");
+}
+
+ul.border_gradient_noir li {
+	border-image-source: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/border_gradient_noir.png");
+}
+ul.border_gradient_gris li {
+	border-image-source: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/Site/border_gradient_gris.png");
+}
+
+
+
+
+/* --------------- tetiere et couleurs du site  ---------------- */
+
+
+	/* Chargement des polices */
+	@font-face {
+	    font-family: 'questrial_webfont';
+	    src: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/questrial-webfont.eot");
+	    src: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/questrial-webfont.eot?#iefix") format('embedded-opentype'),
+	         url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/questrial-webfont.woff") format('woff'),
+	         url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/questrial-webfont.ttf") format('truetype'),
+	         url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/questrial-webfont.svg#questrialregular") format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+	@font-face {
+		font-family: 'league_gothic_webfont';
+		src: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/leaguegothic-webfont.eot");
+		src: url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/leaguegothic-webfont.eot?#iefix") format('embedded-opentype'),
+		url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/leaguegothic-webfont.woff") format('woff'),
+		url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/leaguegothic-webfont.ttf") format('truetype'),
+		url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/polices/leaguegothic-webfont.svg#league_gothicregular") format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+		/* Couleurs et polices utilisees */
+		a {
+			color: #2F5A70;
+		}
+		#banniere {
+			background-image : url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/EpleV2/logoAAM.svg"), url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/EpleV2/aigue-marine-03_tetiere.png");
+			color: #2F5A70;
+		}
+		#banniere #nom_site {
+			font-size: 3.3em ;
+			font-family: league_gothic_webfont ;
+		}
+		#colonne_centrale h1,
+		#colonne_centrale .h1,
+		#colonne_centrale h2,
+		#colonne_centrale .h2,
+		#colonne_centrale h3,
+		#colonne_centrale .h3,
+		#colonne_centrale h4,
+		#colonne_centrale .h4 {
+			color: #2F5A70;
+		}
+		#colonne_centrale .fond_diapo a:hover,
+		#colonne_centrale .afficher_spoiler:hover {
+			color: #2F5A70;
+		}
+		.texte_sombre {
+			color: #2F5A70;
+		}
+		.texte_fonce {
+			color: #7dbdbb;
+		}
+		.texte_pale {
+			color: #d0efee;
+		}
+		body {
+			background : #abe1e0 url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/themes/EpleV2/aigue-marine_fondhtml_repetitif.png") repeat-x  ;
+		}
+		.menu_gauche ul {
+			background-image:-moz-linear-gradient(left, #fff, #d0efee);
+			background-image:-webkit-linear-gradient(left, #fff, #d0efee);
+			background-image:-o-linear-gradient(left, #fff, #d0efee);
+			background-image:linear-gradient(to right, #fff, #d0efee);
+		}
+		.menu_gauche li a:hover {
+			background-image:-moz-linear-gradient(left, #7dbdbb, #d0efee);
+			background-image:-webkit-linear-gradient(left, #7dbdbb, #d0efee);
+			background-image:-o-linear-gradient(left, #7dbdbb, #d0efee);
+			background-image:linear-gradient(to right, #7dbdbb, #d0efee);
+		}
+		#colonne_gauche,
+		.menu_gauche,
+		#colonne_droite,	
+		#agenda_acad .fc-state-highlight {
+			background-color: #d0efee;
+		}
+		#colonne_gauche h2,
+		#colonne_droite h2 {
+			background: #2F5A70;
+		}
+		.fond_sombre {
+			background: #2F5A70;
+		}
+		.bord_sombre {
+			border-color: #2F5A70;
+		}
+		.fond_fonce {
+			background: #7dbdbb;
+		}
+		.bord_fonce {
+			border-color: #7dbdbb;
+		}
+		.fond_pale {
+			background: #d0efee;
+		}
+		.bord_pale {
+			border-color: #d0efee;
+		}
+		

@@ -1,0 +1,78 @@
+/*
+---------------------------------------------------
+Contenu principal
+---------------------------------------------------
+(c) juillet 2014
+Les services en ligne du pôle numérique
+DATSI / DAN - Rectorat d'Aix-Marseille
+---------------------------------------------------
+*/
+@CHARSET "UTF-8";
+
+#bloc_page {
+	margin: auto;
+}
+.contenu_principal {
+	position: relative;
+	margin: 0 auto;
+}
+
+#bloc_colonne_gauche,
+#bloc_colonne_centrale,
+#bloc_colonne_droite {
+	float: left;
+}
+
+#bloc_colonne_gauche,
+#bloc_colonne_droite {
+	width: 195px;
+}
+#bloc_colonne_droite {
+	margin-left: 5px;
+}
+#bloc_colonne_gauche {
+	margin-right: 5px;
+}
+
+
+#bloc_colonne_centrale.mode_1_col {
+	width: 1000px;
+}
+#bloc_colonne_centrale.mode_2_col {
+	width: 800px;
+}
+#bloc_colonne_centrale.mode_3_col {
+	width: 600px;
+}
+#colonne_gauche {
+	margin: 0;
+	padding: 10px 0 0;
+	text-align: center;
+	display: block;
+}
+#colonne_centrale {
+	background-repeat: no-repeat;
+	background-position: 10px 50px;
+	text-align: left;
+	overflow: hidden;
+	margin: 0;
+}
+
+#bloc_colonne_centrale.mode_1_col #colonne_centrale {
+	padding: 0;
+}
+#bloc_colonne_centrale.mode_2_col #colonne_centrale,
+#bloc_colonne_centrale.mode_3_col #colonne_centrale {
+	padding: 0 0 9px;
+}
+#colonne_droite {
+	padding: 0;
+	display: block;
+	text-align: left;
+}
+#pied_de_page {
+	
+	margin: 5px auto 5px auto;
+	padding: 0;
+}
+

@@ -1,0 +1,201 @@
+/*
+---------------------------------------------------
+Plugin "Gestion du squelette
+académique" pour Spip 3.0
+---------------------------------------------------
+(c) 2015
+Les services en ligne du pôle numérique
+DSI / DANE - Rectorat d'Aix-Marseille
+---------------------------------------------------
+Thème couleurs (EPLE, Écoles...)
+---------------------------------------------------
+*/
+
+@CHARSET "UTF-8";
+
+/* habillages */
+
+#bloc_page {
+	width: 1000px;
+}
+
+.bordures {
+	border: solid 1px #000;
+}
+.arrondis {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+.marges_laterales {
+	margin: 0 5px;
+}
+
+/* typo */
+
+#colonne_centrale h1,
+#colonne_centrale .h1,
+#colonne_centrale h2,
+#colonne_centrale .h2,
+.colonne_laterale h2,
+#colonne_centrale h3,
+#colonne_centrale .h3,
+#colonne_centrale h4,
+#colonne_centrale .h4, 
+#colonne_centrale .actualite_entete {
+	font-family: league_gothic_webfont ;
+}
+
+
+#colonne_centrale h1 b, #colonne_centrale h1 strong,
+#colonne_centrale .h1 b,#colonne_centrale .h1 strong,
+#colonne_centrale h2 b, #colonne_centrale h2 strong,
+#colonne_centrale .h2 b,#colonne_centrale .h2 strong,
+#colonne_centrale h3 b, #colonne_centrale h3 strong,
+#colonne_centrale .h3 b,#colonne_centrale .h3 strong,
+#colonne_centrale h4 b, #colonne_centrale h4 strong,
+#colonne_centrale .h4 b,#colonne_centrale .h4 strong {
+	font-weight: normal;
+}
+
+
+
+h1, .h1 {
+	font-size: 2.3em;
+}
+h2, .h2 {
+	font-size: 1.7em;
+}
+h3, .h3 {
+	font-size: 1.7em;
+}
+h4, .h4 {
+	font-size: 1.5em;
+}
+#colonne_centrale .actualite_entete {
+	font-size: 1.6em;
+}
+.titre_diapo {
+	font-size: 1.8em;
+	font-weight: normal;
+}
+
+/* haut de page */
+
+#banniere {
+	width: 998px;
+	margin: 0 auto 2px;
+	height: 90px;
+	border-width: 0 1px 1px;
+	border-style: solid;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	background-position: -1px 0;
+}
+#banniere #infos_site {
+	left: 205px;
+	width: 790px;
+	top: 3px;
+}
+#banniere a {
+	top: 0;
+	height: 75px;
+	background-position: 0 0;
+}
+#liens_institutionnels .site_en_gouv a {
+	width: 65px;
+}
+#liens_institutionnels .site_acad a {
+	left: 65px;
+	width: 130px;
+}
+#banniere #accueil a {
+	width: 800px;
+	left: 195px;
+}
+
+#menu_horizontal {
+	padding: 3px 0 0px;
+	text-align: right;
+}
+#menu_horizontal li {
+	border: solid 1px #666;
+	border-radius: 10px;
+	margin: 0 0 3px 5px;
+}
+#menu_horizontal a {
+	padding: 0 7px;
+}
+
+/* Blocs principaux */
+.contenu_principal {
+	padding: 2px 0 0 0;
+	width: 1000px;
+}
+
+ul.border_gradient_noir li {
+	border-color: #777;
+}
+ul.border_gradient_gris li {
+	border-color: #ccc;
+}
+
+/* Connexion / déconnexion */
+#login_logout {
+	margin-bottom: 5px;
+}
+#login_logout ul {
+	margin: 0 0 10px;
+}
+#login_logout li a {
+	display: block;
+	padding: 3px 7px;
+	font-weight: bold;
+}
+#login_logout ul li a {
+	text-align: left;
+}
+#login_logout ul li a {
+	color: #9C9C9C;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	text-align: left;
+}
+#login_logout ul li a:hover {
+	color: #000;
+	background: none;
+}
+
+
+.formulaire_recherche input[type=text] {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	padding: 3px 7px;
+	color: #999;
+	margin: auto;
+	display: block;
+	width: 200px;
+	font-size: .9em;
+}
+
+#colonne_centrale {
+	background-color: #fff;
+}
+#colonne_centrale .contenu_interieur {
+	padding: 5px 5px 0;
+}
+
+.colonne_laterale .article_colonne {
+	text-align: left;
+}
+.statistiques ul {
+	background: transparent !important;
+	text-align: center;
+	margin: 0 0 10px;
+	color: #9C9C9C;
+}

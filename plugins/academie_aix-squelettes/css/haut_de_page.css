@@ -1,0 +1,186 @@
+/*
+---------------------------------------------------
+Plugin "Gestion du squelette
+académique" pour Spip 3.0
+---------------------------------------------------
+(c) 2014
+Les services en ligne du pôle numérique
+DATSI / DAN - Rectorat d'Aix-Marseille
+---------------------------------------------------
+Elements CSS pour la bannière,
+le menu horizontal et le menu
+spécifique pour smartphones
+et tablettes
+---------------------------------------------------
+*/
+
+@CHARSET "UTF-8";
+
+#banniere {
+	position: relative;
+	padding: 0;
+	background-repeat: no-repeat;
+}
+#banniere #infos_site {
+	margin: 0 0 0 8px;
+	padding: 0;
+	position: absolute;	
+	line-height:1;
+}
+
+#banniere #nom_site {
+	position: absolute;
+}
+
+#banniere #type_site,
+#banniere #lieu_site {
+	font-family: questrial_webfont;
+	color: #000;
+	font-size: 1.1em;
+	letter-spacing: 1.1px;
+	position: absolute;
+}
+#banniere #type_site {
+	top: 39px;
+}
+#banniere #lieu_site {
+	font-weight: bold;
+	top: 54px;
+}
+#banniere a {
+	display:block;
+	position: absolute;
+}
+
+#liens_institutionnels {
+	display: block;
+}
+#liens_institutionnels span {
+	display: none;
+}
+/*
+#banniere a {
+	opacity: 0.5;
+}
+.site_en_gouv a {
+	background: blue;
+}
+.site_acad a {
+	background: red;
+}
+#accueil a {
+	background: yellow;
+}
+*/
+
+#menu_horizontal {
+	position: relative;
+	margin: auto;
+	display: block;
+	text-align: right;
+}
+#menu_horizontal li {
+	display: block;
+	float: right;
+}
+#menu_horizontal a {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	height: 18px;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: bold;
+}
+#menu_horizontal a:hover {
+	color: #fff;
+}
+
+/* Appelé depuis le pied de page */
+#smart_menu {
+	display: none;
+	position: absolute;
+	right: 0;
+	top:0;
+	text-align: right;
+	z-index:1000000;
+	font-size: 1.1em;
+}
+#smart_formulaire_recherche {
+	text-align: center;
+	padding: 0;
+	margin: 5px auto;
+}
+#smart_formulaire_recherche input[type=text] {
+	width: 100px;
+	border: 0;
+}
+#smart_bouton {
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	right : 5px;
+	top: 5px;
+	display: none;
+	cursor: pointer;
+}
+#smart_menu .lien_titre {
+	font-weight: bold;
+	line-height: 13px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	padding: 0 0 0 14px;
+}
+
+#smart_contenu {
+	margin: 5px 50px 0 0;
+	display: none;
+}
+#smart_contenu ul {
+	color: #FFF;
+	background: #000;
+	padding: 5px 0;
+}
+#smart_contenu li {
+	color: #FFF;
+	width: 110px;
+	background: #000;
+	cursor: pointer;
+}
+#smart_contenu li a {
+	height: auto;
+	color: #FFF;
+	padding: 3px 7px;
+	display: block;
+}
+#smart_contenu .accueil_rubriques a {
+	padding-bottom: 5px;
+}
+#smart_contenu .smart_element {
+	padding: 5px;
+}
+#smart_contenu .smart_element ul {
+	position: absolute;
+	right: 175px;
+	top: 5px;
+	display: none;
+}
+#smart_contenu .smart_element li {
+	display: block;
+	text-align: right;
+	width: 130px;
+}
+#smart_contenu .smart_element li a {
+	text-transform: initial;
+	font-weight: bold;
+}
+#smart_contenu .smart_element li a:hover {
+	color: #ccc !important;
+}
+#smart_contenu .accueil_rubriques .logo_accueil {
+	display: none;
+}
+#smart_contenu .accueil_rubriques .texte_accueil {
+	display: block;
+}

@@ -1,0 +1,170 @@
+/*
+---------------------------------------------------
+Plugin "Gestion du squelette
+académique" pour Spip 3.0
+---------------------------------------------------
+(c) 2014
+Les services en ligne du pôle numérique
+DATSI / DAN - Rectorat d'Aix-Marseille
+---------------------------------------------------
+Elements CSS pour les
+Colonnes gauche et droite
+---------------------------------------------------
+*/
+
+@CHARSET "UTF-8";
+
+/* --------------------------------------
+Colonne gauche
+-------------------------------------- */
+
+/* Blocs divers */
+
+.bloc_colonne {
+	margin: 0 auto 10px;
+}
+.menu_gauche {
+	margin: 0 5px 0 0;
+	padding: 9px 0;
+}
+
+/* logo du site et logos des sites associés */
+.bloc_colonne .spip_logos {
+  float: none;
+  margin: 5px 0 0;
+} 
+
+/* formulaire de recherche */
+.formulaire_recherche {
+	position: inherit;
+	margin: 0 auto 10px;
+	text-align: left;
+	padding: 5px 7px;
+}
+
+.formulaire_recherche input[type=text] {
+
+}
+.formulaire_recherche input[type=submit],
+#smart_formulaire_recherche label {
+	display: none;
+}
+#col_gauche_formulaire_recherche input[type=text] {
+	width: 160px;
+	border: solid 1px #AAA;
+}
+
+/* langues du site */
+#formulaire_menu_lang {
+	position: inherit;
+	width: 180px;
+	margin: 5px auto;
+}
+#formulaire_menu_lang label {
+	display: none;
+}
+#menu_langues {
+	width: 180px;
+	margin: 10px auto 5px;
+	color: #9C9C9C;
+	font-size: .8em;
+	line-height: 22px;
+}
+#menu_langues img.logo_langue {
+	padding: 0 2px 0 1px;
+	vertical-align: middle;
+}
+#menu_langues span.logo_langue {
+	padding: 3px 6px 4px;
+	font-weight: bold;
+	font-size: 1.4em;
+	position: relative;
+	top: 3px;
+	background: rgba(255, 255, 255, 0.5);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+#menu_langues .logo_langue:hover {
+	background: #fff;
+	color: #000;
+	font-weight: bold;
+}
+
+/* Statistiques (colonne de gauche) */
+ 
+.statistiques ul {
+	margin: 10px 0;
+}
+
+
+/* --------------------------------------
+Colonne droite (mode 3 colonnes)
+-------------------------------------- */
+
+/* --------------------------------------
+Commun aux colonnes gauche et droite
+--------------------------------------- */
+
+.colonne_laterale h2 {
+	margin: 0 0 2px;
+	color: #FFF;
+	font-size: 1.5em;
+	line-height: 1;
+	padding: 3px 2px;
+	text-align: center;
+}
+
+.colonne_laterale .calendriermini .calendar-container {
+	height: auto !important;
+}
+.colonne_laterale #evenement_a_venir {
+	width: 180px;
+}
+.colonne_laterale #evenement_a_venir .a_venir {
+	border-style: solid;
+	border-width: 0 0 1px;
+	padding: 0 0 2px 0;
+	margin: 0 0 2px;
+	font-size: .9em;
+}
+.colonne_laterale #evenement_a_venir .evenement {
+	text-indent: -40px;
+	margin: 0 0 0 40px;
+}
+
+/* Derniers articles */
+.colonne_laterale .article_colonne {
+	margin: 5px 0 7px;
+	position: relative;
+}
+.colonne_laterale .breve_colonne {
+	margin: 5px 0 0;
+	position: relative;
+}
+.colonne_laterale .article_rub {
+	line-height: 1.1;
+}
+.colonne_laterale .article_titre {
+	font-weight: bold;
+}
+.colonne_laterale .article_date {
+	font-size: .9em;
+}
+.colonne_laterale .resume {
+	position: absolute;
+	display: none;
+	border-width: 1px 1px 1px 3px;
+	border-style: dotted dotted solid solid;
+	background: #FFF;
+	padding: 5px;
+	z-index: 100;
+	font-size: 11px;
+	color: #555;
+}
+
+.colonne_laterale .article_colonne:hover > .resume,
+.colonne_laterale .breve_colonne:hover > .resume {
+	display: block;
+}

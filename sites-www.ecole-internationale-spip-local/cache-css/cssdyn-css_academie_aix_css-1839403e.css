@@ -1,0 +1,40 @@
+/* #PRODUIRE{fond=css/academie_aix.css}
+   md5:695b8fe4be53fd14a5fa8c4517a0660d */
+
+
+/*
+---------------------------------------------------
+Plugin "Gestion du squelette
+académique" pour Spip 3.0
+---------------------------------------------------
+(c) 2015
+Les services en ligne du pôle numérique
+DSI / DANE - Rectorat d'Aix-Marseille
+---------------------------------------------------
+Appel des différents CSS uilisés
+---------------------------------------------------
+*/
+
+@CHARSET "UTF-8";
+
+/* --------------- Éléments généraux --------------- */
+
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/elements_commun.css");
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/haut_de_page.css");
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/blocs_principaux.css");
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/sommaire.css");
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/colonnes_gauche_droite.css");
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/menu_rubriques.css");
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/colonne_centrale.css");
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/pied_de_page.css");
+
+
+ 
+
+/* --------------- Thèmes couleurs --------------- */
+
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/theme_couleurs.css");
+
+
+@import url("http://www.ecole-internationale.ac-aix-marseille.fr/spip/plugins/academie_aix/squelettes/css/media_queries.css");
+
